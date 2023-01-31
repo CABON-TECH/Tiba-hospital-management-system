@@ -5,5 +5,22 @@
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.9.0"
-  }
+  },
+  "name": "tiba-hospital-management-system",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/CABON-TECH/Tiba-hospital-management-system.git"
+  },
+  "author": "CABON-TECH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CABON-TECH/Tiba-hospital-management-system/issues"
+  },
+  "homepage": "https://github.com/CABON-TECH/Tiba-hospital-management-system#readme",
+  "description": ""
 }
