@@ -4,7 +4,7 @@ import './Navigationbar.css';
 
 const Navigationbar = () => {
     return (
-        <div className="navbar">
+        
         <nav>
             <ul>
                 <li>
@@ -19,7 +19,6 @@ const Navigationbar = () => {
                 </li>
             </ul>
         </nav>
-        </div>
     );
     }
 
