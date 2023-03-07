@@ -1,7 +1,7 @@
 *
 .navbar{
     height: 120px;
-    background-color: rgba(0,20,0.9,0.5);
+    background-color: rgba(31, 133, 128, 0.5);
     color: #fff;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
     position: absolute;
@@ -34,5 +34,26 @@ button {
     display: flex;
     font-weight: 600;
     justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
     
 }
+
+button:hover{
+    background-color: #1f8580;
+    color: #fff;
+}
+
+button:active{
+    background-color: #1f8580;
+    color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
