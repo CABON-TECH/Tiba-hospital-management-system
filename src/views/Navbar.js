@@ -5,7 +5,7 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbarlogo">
-          <h1>Logo</h1>
+          <h1>{Logo}</h1>
           <h1>login</h1>
         </div>
         <hr/>
