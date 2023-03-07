@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 export const Navbar = () => {
   const handleHomeClick = () => {
     
@@ -29,8 +28,6 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbarlogo">
-          <button onClick={handleLogoClick}><Link to="/">Logo</Link></button>
-          <button onClick={handleLoginClick}><Link to="/signin">Login</Link></button>
         </div>
         <hr/>
         <div className="navbarlinks">
