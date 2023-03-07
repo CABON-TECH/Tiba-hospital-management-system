@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
+=======
+import {Link} from 'react-router-dom'
+>>>>>>> 21a6b57122deaad404292ee5a6aacdb574ab73a9
 export const Navbar = () => {
   const handleHomeClick = () => {
     
@@ -29,6 +33,8 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbarlogo">
+          <button onClick={handleLogoClick}><Link to="/">Logo</Link></button>
+          <button onClick={handleLoginClick}><Link to="/signin">Login</Link></button>
         </div>
         <hr/>
         <div className="navbarlinks">
