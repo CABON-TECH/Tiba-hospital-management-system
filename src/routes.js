@@ -4,6 +4,8 @@ import App from './App';
 import About from './components/About';
 import SignIn from './components/SignIn';
 import Logo from './components/Logo';
+import Services from './components/Services';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter(
     [{
@@ -21,6 +23,14 @@ const router = createBrowserRouter(
     {
         path: 'logo',
         element: <Logo />
+    },
+    {
+        path: '/services',
+        element: <Services />
+    },
+    {
+        path: '/contact',
+        element: <Contact />
     }
 
 
