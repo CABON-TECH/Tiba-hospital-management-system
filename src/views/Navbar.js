@@ -57,6 +57,14 @@ export const Navbar = () => {
         </div>
 
       </nav>
+
+      <div className="homepage">
+        <div className="homepagecontent">
+          <h1>WELCOME TO TIBA HOSPITAL</h1>
+        </div>
+
+
+      </div>
     </div>
     </>
   )
