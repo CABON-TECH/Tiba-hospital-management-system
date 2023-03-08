@@ -3,7 +3,6 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import About from './components/About';
 import SignIn from './components/SignIn';
-import Logo from './components/Logo';
 import Services from './components/Services';
 import Contact from './components/Contact';
 
@@ -19,10 +18,6 @@ const router = createBrowserRouter(
     {
         path: '/signin',
         element: <SignIn />
-    },
-    {
-        path: 'logo',
-        element: <Logo />
     },
     {
         path: '/services',

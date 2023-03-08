@@ -1,8 +1,18 @@
-*
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    color: black;
+    
+}
 .navbar{
-    height: 120px;
-    background-color: rgba(31, 133, 128, 0.5);
-    color: #fff;
+    height: 10px;
+    background-color: transparent;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
     position: absolute;
     width: 100%;
@@ -57,3 +67,13 @@ button:focus{
     outline: none;
 }
 
+.container {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+
+    
+}

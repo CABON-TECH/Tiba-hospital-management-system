@@ -24,10 +24,12 @@ export const Navbar = () => {
 
   const handleLogoClick = () => {
     
+    
   };
 
   return (
     <>
+    <div className="container">
       <nav className="navbar">
         <div className="navbarlogo">
           <button onClick={handleLogoClick}><Link to="/">Logo</Link></button>
@@ -52,6 +54,7 @@ export const Navbar = () => {
         </div>
 
       </nav>
+    </div>
     </>
   )
 }
