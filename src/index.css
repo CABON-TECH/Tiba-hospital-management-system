@@ -37,7 +37,7 @@ ul{
 }
 
 button {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 22px;
     font-size: 16px;
     display: flex;
@@ -84,13 +84,29 @@ button:focus{
 }
 
 .logobutton {
-    background-blend-mode: overlay;
-    background-color: transparent;
-    border: none;
+  color: transparent;  
     
 
 
 }
+
+.logobutton:hover {
+    color: transparent;
+    background-color: transparent;
+
+}
+
+.logobutton:active {
+    color: transparent;
+    background-color: transparent;
+}
+
+.logobutton:focus {
+    color: transparent;
+    background-color: transparent;
+}
+
+
 
 .loginbutton {
     min-height: 50px;
