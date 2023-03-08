@@ -57,14 +57,18 @@ export const Navbar = () => {
         </div>
 
       </nav>
-
-      <div className="homepage">
-        <div className="homepagecontent">
-          <h1>WELCOME TO TIBA HOSPITAL</h1>
-        </div>
-
-
+      <div>
+        <section className="content">
+          <div className="content1">
+            <h1>Healthcare for everyone</h1>
+            <p>Our mission is to provide<br/> quality healthcare to all people in need,<br/> regardless of their ability to pay.</p>
+            <button className="btn1"><Link to="/signin">Book an appointment</Link></button>
+          </div>
+          
+        </section>
       </div>
+
+
     </div>
     </>
   )
