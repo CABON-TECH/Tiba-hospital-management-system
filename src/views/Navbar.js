@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '/src/assets/logo.jpg'
 
 export const Navbar = () => {
   const handleHomeClick = () => {
@@ -32,8 +33,8 @@ export const Navbar = () => {
     <div className="container">
       <nav className="navbar">
         <div className="navbarlogo">
-          <button onClick={handleLogoClick}><Link to="/">Logo</Link></button>
-          <button onClick={handleLoginClick}><Link to="/signin">Login</Link></button>
+          <button className="logobutton"onClick={handleLogoClick}><Link to="/"><img src={logo} alt="Logo" /></Link></button>
+          <button className="loginbutton"onClick={handleLoginClick}><Link to="/signin">Login</Link></button>
         </div>
         <hr/>
         <div className="navbarlinks">

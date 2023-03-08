@@ -33,8 +33,7 @@ ul{
 .navbarlogo{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    padding-right: 20px;
+
 }
 
 button {
@@ -76,4 +75,28 @@ button:focus{
     display: flex;
 
     
+}
+
+.navbarlogo img{
+    width: 150px;
+    height: 100px;
+    
+}
+
+.logobutton {
+    background-blend-mode: overlay;
+    background-color: transparent;
+    border: none;
+    
+
+
+}
+
+.loginbutton {
+    min-height: 50px;
+    padding: 15px;
+    position: absolute;
+    left: 900px;
+    top: 25px;
+    height: 25px;
 }
