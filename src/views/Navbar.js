@@ -35,7 +35,7 @@ export const Navbar = () => {
     <div className="container">
       <nav className="navbar">
         <div className="navbarlogo">
-          <button className="logobutton"onClick={handleLogoClick}><Link to="/"><FontAwesomeIcon icon={faHospitalSymbol} size="4x" /></Link></button>
+          <button className="logobutton"onClick={handleLogoClick}><Link to="/"><FontAwesomeIcon icon={faHospitalSymbol} size="4x" /><span>Tiba <br/>Hospital</span> </Link></button>
           <button className="loginbutton"onClick={handleLoginClick}><Link to="/signin">Login</Link></button>
         </div>
         <hr/>
