@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHospitalSymbol} from '@fortawesome/free-solid-svg-icons'
-//import logo from '/src/assets/logo.jpg'
+import {useContext} from 'react'
+import {AuthContext} from '../context/AuthContext'
 
 export const Navbar = () => {
   const handleHomeClick = () => {
@@ -30,6 +31,11 @@ export const Navbar = () => {
     
   };
 
+  const {About} = useContext(AuthContext)
+  const {Services} = useContext(AuthContext)
+  const {Contact} = useContext(AuthContext)
+
+
   return (
     <>
     <div className="container">
@@ -46,6 +52,7 @@ export const Navbar = () => {
             </li>
             <li>
               <button onClick={handleAboutClick}><Link to="/about">About</Link></button>
+              
             </li>
             <li>
               <button onClick={handleServicesClick}><Link to="/services">Services</Link></button>
@@ -69,7 +76,11 @@ export const Navbar = () => {
       </div>
 
 
+
+
+
     </div>
+
     </>
   )
 }

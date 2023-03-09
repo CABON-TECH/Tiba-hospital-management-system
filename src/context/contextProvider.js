@@ -1,34 +1,22 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useState, } from 'react';
 
-export const AuthContext = createContext();
+const AuthContext = createContext(null);
 
-export const AuthProvider = ({children}) => {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+const AuthProvider = ({children}) => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    const updatedAuthState = (newState) => {
-        setIsAuthenticated(newState);
+    const login = () => {
+        setIsLoggedIn(true);
     };
 
     return (
-        <AuthContext.Provider value={{isAuthenticated, updatedAuthState}}>
+        <AuthContext.Provider value={{isLoggedIn, login}}>
             {children}
         </AuthContext.Provider>
     );
 };
 
- export const MyProtectedPage = () => {
-    const {isAuthenticated} = useContext(AuthContext);
-
-    if (!isAuthenticated) {
-        return <Redirect to="/login" />;
-    }
-
-    return (
-        <div>
-            <h1>My Protected Page</h1>
-        </div>
-    );
-};
 
 
+export {AuthContext, AuthProvider};
 
