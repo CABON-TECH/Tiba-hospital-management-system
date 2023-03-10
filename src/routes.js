@@ -5,7 +5,6 @@ import About from './components/About';
 import SignIn from './components/SignIn';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import { AuthProvider } from './context/contextProvider';
 
 
 
@@ -30,10 +29,7 @@ const router = createBrowserRouter(
         path: '/contact',
         element: <Contact />
     },
-    {
-        path: '/signin',
-        element: <AuthProvider />
-    }
+    
 
 
 

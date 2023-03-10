@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHospitalSymbol} from '@fortawesome/free-solid-svg-icons'
-import {useContext} from 'react'
-import {AuthContext} from '../context/AuthContext'
+
 
 export const Navbar = () => {
   const handleHomeClick = () => {
@@ -31,9 +30,7 @@ export const Navbar = () => {
     
   };
 
-  const {About} = useContext(AuthContext)
-  const {Services} = useContext(AuthContext)
-  const {Contact} = useContext(AuthContext)
+
 
 
   return (
