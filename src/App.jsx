@@ -5,6 +5,12 @@ function App() {
   return (
     <div className="hello">
       <Navbar />
+      <AuthProvider>
+        <About />
+        <Services />
+        <Contact />
+        
+      </AuthProvider>
     </div>
   )
 }
