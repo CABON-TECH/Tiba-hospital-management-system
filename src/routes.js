@@ -6,7 +6,7 @@ import SignIn from './components/SignIn';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import ProtectedRoute from './components/protectedRoute';
-import { ContextProvider } from './context/contextProvider';
+import ContextProvider  from './context/contextProvider';
 
 
 
