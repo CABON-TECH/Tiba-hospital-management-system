@@ -5,6 +5,9 @@ import About from './components/About';
 import SignIn from './components/SignIn';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import ProtectedRoute from './components/protectedRoute';
+import { ContextProvider } from './context/contextProvider';
+
 
 
 
@@ -29,6 +32,14 @@ const router = createBrowserRouter(
         path: '/contact',
         element: <Contact />
     },
+    {
+        path: '/protected',
+        element: <ProtectedRoute />
+    },
+    {
+        path: '/contextProvider',
+        element: <ContextProvider />
+    }
     
 
 

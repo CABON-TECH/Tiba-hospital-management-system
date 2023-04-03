@@ -22,6 +22,7 @@
     "react-auth-kit": "^2.8.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-router": "^6.10.0",
     "react-router-dom": "^6.8.2",
     "ui": "^0.2.4"
   },
