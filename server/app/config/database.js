@@ -4,17 +4,13 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:5000/express
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(MONGODB_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-            }
-        );
-        console.log('MongoDB connected');
-        }
+        const conn = await mongoose.connect(MONGODB_URI)
+        console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline.bold)
+    }
     catch (err) {
-        console.error(err.message);
-        process.exit(1);
-        }
-    };
+        console.error(err)
+        process.exit(1)
+    }
+}
 
-module.exports = connectDB;
+module.exports = connectDB

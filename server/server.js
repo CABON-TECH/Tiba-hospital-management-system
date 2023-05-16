@@ -1,22 +1,23 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 5000;
-require('dotenv').config();
-
+const colors = require('colors');
+const dotenv = require('dotenv').config();
+const port = process.env.PORT || 5000;
 const connectDB = require('./app/config/database');
+const patientRoutes = require('./app/routes.patientRoutes')
+
 
 connectDB();
 
-app.get('/', (req, res) => {
-    res.send('hello world');
-    }
-);
+
+const app = express();
+
+app.use(express.json());
+
+app.use('/api/patients', patientRoutes);
 
 
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`.yellow.bold);
+});
+ 
 
-
-
-app.listen(PORT, () => {
-    console.log(`Listening on port: ${PORT}`);
-    }
-);
